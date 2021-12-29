@@ -1,0 +1,1 @@
+# 自动移除console代码loader
