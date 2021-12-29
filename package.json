@@ -2,9 +2,10 @@
   "name": "remove-log-loader",
   "version": "1.0.0",
   "description": "移除js代码中console.log代码",
-  "main": "index.js",
+  "main": "./dist/remove.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/liuruchao/remove-log-loader/issues"
   },
-  "homepage": "https://github.com/liuruchao/remove-log-loader#readme"
+  "homepage": "https://github.com/liuruchao/remove-log-loader#readme",
+  "devDependencies": {
+    "loader-runner": "^4.2.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
