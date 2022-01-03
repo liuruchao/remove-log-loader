@@ -5,7 +5,7 @@ const { runLoaders } = require('loader-runner')
 
 runLoaders(
   {
-    resource: path.join(__dirname, './test/test.js'),
+    resource: path.join(__dirname, './__test__/test.js'),
     loaders: [
       {
         loader: path.join(__dirname, './src/index.js'),
@@ -17,6 +17,10 @@ runLoaders(
     readResource: fs.readFile.bind(fs),
   },
   (err, result) => {
-    err ? console.log(err) : console.log(result)
+    if (err) {
+      console.log(err, '报错')
+    } else {
+      console.log(result)
+    }
   }
 )

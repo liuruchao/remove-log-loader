@@ -9,7 +9,10 @@ module.exports = {
     clean: true,
     library: {
       name: 'removeLog',
-      type: 'umd',
+      type: 'commonjs',
     },
+  },
+  resolve: {
+    fallback: { assert: false, constants: false, os: false, fs: false },
   },
 }

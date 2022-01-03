@@ -1,11 +1,12 @@
 {
   "name": "remove-log-loader",
-  "version": "1.0.0",
+  "version": "2.1.4",
   "description": "移除js代码中console.log代码",
   "main": "./dist/remove.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "webpack"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "loader-runner": "^4.2.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "jscodeshift": "^0.13.0"
   }
 }
